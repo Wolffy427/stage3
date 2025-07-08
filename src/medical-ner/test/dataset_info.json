@@ -1,0 +1,115 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "json",
+  "dataset_size": 3809592,
+  "description": "",
+  "download_checksums": {
+    "/Users/zhouke/Documents/project/stage3/src/../data/medical/train.json": {
+      "num_bytes": 4773381,
+      "checksum": null
+    },
+    "/Users/zhouke/Documents/project/stage3/src/../data/medical/dev.json": {
+      "num_bytes": 596001,
+      "checksum": null
+    },
+    "/Users/zhouke/Documents/project/stage3/src/../data/medical/test.json": {
+      "num_bytes": 575346,
+      "checksum": null
+    }
+  },
+  "download_size": 5944728,
+  "features": {
+    "id": {
+      "dtype": "int32",
+      "_type": "Value"
+    },
+    "tokens": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "ner_tags": {
+      "feature": {
+        "names": [
+          "O",
+          "B-\u4e34\u5e8a\u8868\u73b0",
+          "I-\u4e34\u5e8a\u8868\u73b0",
+          "B-\u4e2d\u533b\u6cbb\u7597",
+          "I-\u4e2d\u533b\u6cbb\u7597",
+          "B-\u897f\u533b\u8bca\u65ad",
+          "I-\u897f\u533b\u8bca\u65ad",
+          "B-\u65b9\u5242",
+          "I-\u65b9\u5242",
+          "B-\u4e2d\u836f",
+          "I-\u4e2d\u836f",
+          "B-\u4e2d\u533b\u8bca\u65ad",
+          "I-\u4e2d\u533b\u8bca\u65ad",
+          "B-\u897f\u533b\u6cbb\u7597",
+          "I-\u897f\u533b\u6cbb\u7597",
+          "B-\u4e2d\u533b\u8bc1\u5019",
+          "I-\u4e2d\u533b\u8bc1\u5019",
+          "B-\u4e2d\u533b\u6cbb\u5219",
+          "I-\u4e2d\u533b\u6cbb\u5219",
+          "B-\u5176\u4ed6\u6cbb\u7597",
+          "I-\u5176\u4ed6\u6cbb\u7597"
+        ],
+        "_type": "ClassLabel"
+      },
+      "_type": "Sequence"
+    },
+    "input_ids": {
+      "feature": {
+        "dtype": "int32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "attention_mask": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "labels": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 9754320,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 3059048,
+      "num_examples": 5259,
+      "dataset_name": "json"
+    },
+    "dev": {
+      "name": "dev",
+      "num_bytes": 382315,
+      "num_examples": 657,
+      "dataset_name": "json"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 368229,
+      "num_examples": 658,
+      "dataset_name": "json"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
